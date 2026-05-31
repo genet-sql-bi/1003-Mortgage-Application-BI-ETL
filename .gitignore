@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# SSIS
+*.database
+
+# Visual Studio cache
+*.vsidx
+DocumentLayout.json
+
+# Build folders
+bin/
+obj/
