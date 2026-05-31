@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MortgageApplication>
+
+    <Borrower>
+        <BorrowerFirstName>Chaitu</BorrowerFirstName>
+        <BorrowerLastName>S</BorrowerLastName>
+        <BorrowerEmail>a@b.com</BorrowerEmail>
+        <SSN>676564734</SSN>
+        <HomePhone>2103654221</HomePhone>
+        <CellPhone>2145689563</CellPhone>
+        <MaritalStatus>Not Married</MaritalStatus>
+        <DateOfBirth>1991-03-06</DateOfBirth>
+        <CurrentCityStreetAddress>7777 Macallum Blvd</CurrentCityStreetAddress>
+        <State>TX</State>
+        <Zip>254123</Zip>
+        <YearsAtThisAddress>1</YearsAtThisAddress>
+        <Sex>Male</Sex>
+        <Ethnicity>Asian</Ethnicity>
+        <Race>Indian</Race>
+    </Borrower>
+
+    <Financial_Detail>
+        <MonthlyIncome>10000</MonthlyIncome>
+        <Bonuses>500</Bonuses>
+        <Commission>100</Commission>
+        <Checking>5000</Checking>
+        <Savings>6000</Savings>
+        <RetirementFund>10000</RetirementFund>
+        <MutualFund>5000</MutualFund>
+        <RentOrOwn>Rent</RentOrOwn>
+    </Financial_Detail>
+
+    <Loan_Detail>
+        <PurposeOfLoan>Education</PurposeOfLoan>
+        <LoanAmount>10000</LoanAmount>
+        <PurchasePrice>10000</PurchasePrice>
+        <NumberOfUnits>1</NumberOfUnits>
+        <CreditCardAuthorization>Agree</CreditCardAuthorization>
+        <Referral></Referral>
+        <LoanDate>2026-05-20</LoanDate>
+    </Loan_Detail>
+
+    <Property_Detail>
+        <PropertyUsage>Land</PropertyUsage>
+        <PropertyCity>Richardson</PropertyCity>
+        <PropertyState>TX</PropertyState>
+        <PropertyZip>257841</PropertyZip>
+    </Property_Detail>
+
+    <CoBorrower>
+        <CoBorrowerFirstName></CoBorrowerFirstName>
+        <CoBorrowerLastName></CoBorrowerLastName>
+        <CoBorrowerEmail></CoBorrowerEmail>
+    </CoBorrower>
+
+    <RealEstateAgent>
+        <RealEstateAgentName></RealEstateAgentName>
+        <RealEstateAgentPhone></RealEstateAgentPhone>
+        <RealEstateAgentEmail></RealEstateAgentEmail>
+    </RealEstateAgent>
+
+</MortgageApplication>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mortgage>
+  <Applications>
+
+    <Application>
+      <Borrower>
+        <SSN>123456789</SSN>
+        <BorrowerFirstName>John</BorrowerFirstName>
+        <BorrowerLastName>Doe</BorrowerLastName>
+        <BorrowerEmail>john.doe@example.com</BorrowerEmail>
+        <HomePhone>1234567890</HomePhone>
+        <CellPhone>9876543210</CellPhone>
+        <MaritalStatus>Married</MaritalStatus>
+        <DateOfBirth>1980-05-15</DateOfBirth>
+        <CurrentCityStreetAddress>123 Main St</CurrentCityStreetAddress>
+        <City>Anytown</City>
+        <State>NY</State>
+        <Zip>12345</Zip>
+        <YearsAtThisAddress>5</YearsAtThisAddress>
+        <Sex>Male</Sex>
+        <Ethnicity>Caucasian</Ethnicity>
+        <Race>White</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>123456789</SSN>
+        <MonthlyIncome>6000</MonthlyIncome>
+        <Bonuses>500</Bonuses>
+        <Commission>200</Commission>
+        <OtherIncome>100</OtherIncome>
+        <RentOrOwn>Own</RentOrOwn>
+        <Checking>3000</Checking>
+        <Savings>4000</Savings>
+        <RetirementFund>20000</RetirementFund>
+        <MutualFund>10000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>1</Loan_ID>
+        <SSN>123456789</SSN>
+        <property_ID>1</property_ID>
+        <PurposeofLoan>Home Purchase</PurposeofLoan>
+        <LoanAmount>250000</LoanAmount>
+        <PurchasePrice>300000</PurchasePrice>
+        <NumberofUnits>1</NumberofUnits>
+        <CreditCardAuthorization>Agree</CreditCardAuthorization>
+        <Refferal>NULL</Refferal>
+        <CoBorrowerSSN>987654321</CoBorrowerSSN>
+        <LoanDate>2026-05-01</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>123456789</SSN>
+        <propertyID>1</propertyID>
+        <PropertyUsage>Residential</PropertyUsage>
+        <PropertyCity>Anytown</PropertyCity>
+        <PropertyState>NY</PropertyState>
+        <PropertyZip>12345</PropertyZip>
+        <RealEstateAgentName>NULL</RealEstateAgentName>
+        <RealEstateAgentPhone>NULL</RealEstateAgentPhone>
+        <RealEstateAgentEmail>NULL</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+    <Application>
+      <Borrower>
+        <SSN>234567890</SSN>
+        <BorrowerFirstName>Mary</BorrowerFirstName>
+        <BorrowerLastName>Johnson</BorrowerLastName>
+        <BorrowerEmail>mary.johnson@example.com</BorrowerEmail>
+        <HomePhone>6175551002</HomePhone>
+        <CellPhone>6175552002</CellPhone>
+        <MaritalStatus>Single</MaritalStatus>
+        <DateOfBirth>1990-07-22</DateOfBirth>
+        <CurrentCityStreetAddress>22 Oak Ave</CurrentCityStreetAddress>
+        <City>Cambridge</City>
+        <State>MA</State>
+        <Zip>02139</Zip>
+        <YearsAtThisAddress>3</YearsAtThisAddress>
+        <Sex>Female</Sex>
+        <Ethnicity>Not Hispanic</Ethnicity>
+        <Race>Black</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>234567890</SSN>
+        <MonthlyIncome>6200</MonthlyIncome>
+        <Bonuses>300</Bonuses>
+        <Commission>200</Commission>
+        <OtherIncome>100</OtherIncome>
+        <RentOrOwn>Rent</RentOrOwn>
+        <Checking>8000</Checking>
+        <Savings>15000</Savings>
+        <RetirementFund>30000</RetirementFund>
+        <MutualFund>7000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>2</Loan_ID>
+        <SSN>234567890</SSN>
+        <property_ID>2</property_ID>
+        <PurposeofLoan>Refinance</PurposeofLoan>
+        <LoanAmount>300000</LoanAmount>
+        <PurchasePrice>360000</PurchasePrice>
+        <NumberofUnits>1</NumberofUnits>
+        <CreditCardAuthorization>Agree</CreditCardAuthorization>
+        <Refferal>Zillow</Refferal>
+        <CoBorrowerSSN>NULL</CoBorrowerSSN>
+        <LoanDate>2026-05-02</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>234567890</SSN>
+        <propertyID>2</propertyID>
+        <PropertyUsage>Primary Residence</PropertyUsage>
+        <PropertyCity>Cambridge</PropertyCity>
+        <PropertyState>MA</PropertyState>
+        <PropertyZip>02139</PropertyZip>
+        <RealEstateAgentName>Mike Agent</RealEstateAgentName>
+        <RealEstateAgentPhone>6175553002</RealEstateAgentPhone>
+        <RealEstateAgentEmail>mike.agent@email.com</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+    <Application>
+      <Borrower>
+        <SSN>345678901</SSN>
+        <BorrowerFirstName>David</BorrowerFirstName>
+        <BorrowerLastName>Lee</BorrowerLastName>
+        <BorrowerEmail>david.lee@example.com</BorrowerEmail>
+        <HomePhone>6175551003</HomePhone>
+        <CellPhone>6175552003</CellPhone>
+        <MaritalStatus>Married</MaritalStatus>
+        <DateOfBirth>1978-11-05</DateOfBirth>
+        <CurrentCityStreetAddress>33 Pine Rd</CurrentCityStreetAddress>
+        <City>Quincy</City>
+        <State>MA</State>
+        <Zip>02169</Zip>
+        <YearsAtThisAddress>8</YearsAtThisAddress>
+        <Sex>Male</Sex>
+        <Ethnicity>Asian</Ethnicity>
+        <Race>Asian</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>345678901</SSN>
+        <MonthlyIncome>9000</MonthlyIncome>
+        <Bonuses>1000</Bonuses>
+        <Commission>500</Commission>
+        <OtherIncome>300</OtherIncome>
+        <RentOrOwn>Own</RentOrOwn>
+        <Checking>20000</Checking>
+        <Savings>40000</Savings>
+        <RetirementFund>90000</RetirementFund>
+        <MutualFund>25000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>3</Loan_ID>
+        <SSN>345678901</SSN>
+        <property_ID>3</property_ID>
+        <PurposeofLoan>Purchase</PurposeofLoan>
+        <LoanAmount>450000</LoanAmount>
+        <PurchasePrice>520000</PurchasePrice>
+        <NumberofUnits>2</NumberofUnits>
+        <CreditCardAuthorization>No</CreditCardAuthorization>
+        <Refferal>Realtor</Refferal>
+        <CoBorrowerSSN>NULL</CoBorrowerSSN>
+        <LoanDate>2026-05-03</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>345678901</SSN>
+        <propertyID>3</propertyID>
+        <PropertyUsage>Investment</PropertyUsage>
+        <PropertyCity>Quincy</PropertyCity>
+        <PropertyState>MA</PropertyState>
+        <PropertyZip>02169</PropertyZip>
+        <RealEstateAgentName>Linda Agent</RealEstateAgentName>
+        <RealEstateAgentPhone>6175553003</RealEstateAgentPhone>
+        <RealEstateAgentEmail>linda.agent@email.com</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+    <Application>
+      <Borrower>
+        <SSN>456789012</SSN>
+        <BorrowerFirstName>Sara</BorrowerFirstName>
+        <BorrowerLastName>Brown</BorrowerLastName>
+        <BorrowerEmail>sara.brown@example.com</BorrowerEmail>
+        <HomePhone>6175551004</HomePhone>
+        <CellPhone>6175552004</CellPhone>
+        <MaritalStatus>Single</MaritalStatus>
+        <DateOfBirth>1992-03-18</DateOfBirth>
+        <CurrentCityStreetAddress>44 Maple St</CurrentCityStreetAddress>
+        <City>Boston</City>
+        <State>MA</State>
+        <Zip>02110</Zip>
+        <YearsAtThisAddress>2</YearsAtThisAddress>
+        <Sex>Female</Sex>
+        <Ethnicity>Hispanic</Ethnicity>
+        <Race>White</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>456789012</SSN>
+        <MonthlyIncome>5800</MonthlyIncome>
+        <Bonuses>200</Bonuses>
+        <Commission>150</Commission>
+        <OtherIncome>100</OtherIncome>
+        <RentOrOwn>Rent</RentOrOwn>
+        <Checking>6000</Checking>
+        <Savings>12000</Savings>
+        <RetirementFund>25000</RetirementFund>
+        <MutualFund>5000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>4</Loan_ID>
+        <SSN>456789012</SSN>
+        <property_ID>4</property_ID>
+        <PurposeofLoan>Purchase</PurposeofLoan>
+        <LoanAmount>280000</LoanAmount>
+        <PurchasePrice>330000</PurchasePrice>
+        <NumberofUnits>1</NumberofUnits>
+        <CreditCardAuthorization>Agree</CreditCardAuthorization>
+        <Refferal>Website</Refferal>
+        <CoBorrowerSSN>NULL</CoBorrowerSSN>
+        <LoanDate>2026-05-04</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>456789012</SSN>
+        <propertyID>4</propertyID>
+        <PropertyUsage>Primary Residence</PropertyUsage>
+        <PropertyCity>Boston</PropertyCity>
+        <PropertyState>MA</PropertyState>
+        <PropertyZip>02110</PropertyZip>
+        <RealEstateAgentName>James Agent</RealEstateAgentName>
+        <RealEstateAgentPhone>6175553004</RealEstateAgentPhone>
+        <RealEstateAgentEmail>james.agent@email.com</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+    <Application>
+      <Borrower>
+        <SSN>567890123</SSN>
+        <BorrowerFirstName>Michael</BorrowerFirstName>
+        <BorrowerLastName>Davis</BorrowerLastName>
+        <BorrowerEmail>michael.davis@example.com</BorrowerEmail>
+        <HomePhone>6175551005</HomePhone>
+        <CellPhone>6175552005</CellPhone>
+        <MaritalStatus>Married</MaritalStatus>
+        <DateOfBirth>1980-09-09</DateOfBirth>
+        <CurrentCityStreetAddress>55 Cedar Ln</CurrentCityStreetAddress>
+        <City>Newton</City>
+        <State>MA</State>
+        <Zip>02458</Zip>
+        <YearsAtThisAddress>6</YearsAtThisAddress>
+        <Sex>Male</Sex>
+        <Ethnicity>Not Hispanic</Ethnicity>
+        <Race>White</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>567890123</SSN>
+        <MonthlyIncome>11000</MonthlyIncome>
+        <Bonuses>1200</Bonuses>
+        <Commission>800</Commission>
+        <OtherIncome>400</OtherIncome>
+        <RentOrOwn>Own</RentOrOwn>
+        <Checking>25000</Checking>
+        <Savings>50000</Savings>
+        <RetirementFund>120000</RetirementFund>
+        <MutualFund>35000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>5</Loan_ID>
+        <SSN>567890123</SSN>
+        <property_ID>5</property_ID>
+        <PurposeofLoan>Investment</PurposeofLoan>
+        <LoanAmount>600000</LoanAmount>
+        <PurchasePrice>700000</PurchasePrice>
+        <NumberofUnits>3</NumberofUnits>
+        <CreditCardAuthorization>Agree</CreditCardAuthorization>
+        <Refferal>Agent</Refferal>
+        <CoBorrowerSSN>NULL</CoBorrowerSSN>
+        <LoanDate>2026-05-05</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>567890123</SSN>
+        <propertyID>5</propertyID>
+        <PropertyUsage>Investment</PropertyUsage>
+        <PropertyCity>Newton</PropertyCity>
+        <PropertyState>MA</PropertyState>
+        <PropertyZip>02458</PropertyZip>
+        <RealEstateAgentName>Anna Agent</RealEstateAgentName>
+        <RealEstateAgentPhone>6175553005</RealEstateAgentPhone>
+        <RealEstateAgentEmail>anna.agent@email.com</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+    <Application>
+      <Borrower>
+        <SSN>678901234</SSN>
+        <BorrowerFirstName>Linda</BorrowerFirstName>
+        <BorrowerLastName>Wilson</BorrowerLastName>
+        <BorrowerEmail>linda.wilson@example.com</BorrowerEmail>
+        <HomePhone>6175551006</HomePhone>
+        <CellPhone>6175552006</CellPhone>
+        <MaritalStatus>Divorced</MaritalStatus>
+        <DateOfBirth>1987-12-30</DateOfBirth>
+        <CurrentCityStreetAddress>66 Elm St</CurrentCityStreetAddress>
+        <City>Somerville</City>
+        <State>MA</State>
+        <Zip>02143</Zip>
+        <YearsAtThisAddress>4</YearsAtThisAddress>
+        <Sex>Female</Sex>
+        <Ethnicity>Not Hispanic</Ethnicity>
+        <Race>Black</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>678901234</SSN>
+        <MonthlyIncome>7000</MonthlyIncome>
+        <Bonuses>400</Bonuses>
+        <Commission>250</Commission>
+        <OtherIncome>150</OtherIncome>
+        <RentOrOwn>Rent</RentOrOwn>
+        <Checking>9000</Checking>
+        <Savings>18000</Savings>
+        <RetirementFund>45000</RetirementFund>
+        <MutualFund>10000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>6</Loan_ID>
+        <SSN>678901234</SSN>
+        <property_ID>6</property_ID>
+        <PurposeofLoan>Refinance</PurposeofLoan>
+        <LoanAmount>320000</LoanAmount>
+        <PurchasePrice>390000</PurchasePrice>
+        <NumberofUnits>1</NumberofUnits>
+        <CreditCardAuthorization>No</CreditCardAuthorization>
+        <Refferal>Zillow</Refferal>
+        <CoBorrowerSSN>NULL</CoBorrowerSSN>
+        <LoanDate>2026-05-06</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>678901234</SSN>
+        <propertyID>6</propertyID>
+        <PropertyUsage>Primary Residence</PropertyUsage>
+        <PropertyCity>Somerville</PropertyCity>
+        <PropertyState>MA</PropertyState>
+        <PropertyZip>02143</PropertyZip>
+        <RealEstateAgentName>Kevin Agent</RealEstateAgentName>
+        <RealEstateAgentPhone>6175553006</RealEstateAgentPhone>
+        <RealEstateAgentEmail>kevin.agent@email.com</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+    <Application>
+      <Borrower>
+        <SSN>789012345</SSN>
+        <BorrowerFirstName>Robert</BorrowerFirstName>
+        <BorrowerLastName>Miller</BorrowerLastName>
+        <BorrowerEmail>robert.miller@example.com</BorrowerEmail>
+        <HomePhone>6175551007</HomePhone>
+        <CellPhone>6175552007</CellPhone>
+        <MaritalStatus>Married</MaritalStatus>
+        <DateOfBirth>1975-06-15</DateOfBirth>
+        <CurrentCityStreetAddress>77 River Rd</CurrentCityStreetAddress>
+        <City>Worcester</City>
+        <State>MA</State>
+        <Zip>01608</Zip>
+        <YearsAtThisAddress>10</YearsAtThisAddress>
+        <Sex>Male</Sex>
+        <Ethnicity>Not Hispanic</Ethnicity>
+        <Race>White</Race>
+      </Borrower>
+      <financial_detail>
+        <SSN>789012345</SSN>
+        <MonthlyIncome>13000</MonthlyIncome>
+        <Bonuses>1500</Bonuses>
+        <Commission>1000</Commission>
+        <OtherIncome>500</OtherIncome>
+        <RentOrOwn>Own</RentOrOwn>
+        <Checking>30000</Checking>
+        <Savings>65000</Savings>
+        <RetirementFund>150000</RetirementFund>
+        <MutualFund>45000</MutualFund>
+      </financial_detail>
+      <Loan_detail>
+        <Loan_ID>7</Loan_ID>
+        <SSN>789012345</SSN>
+        <property_ID>7</property_ID>
+        <PurposeofLoan>Purchase</PurposeofLoan>
+        <LoanAmount>500000</LoanAmount>
+        <PurchasePrice>575000</PurchasePrice>
+        <NumberofUnits>2</NumberofUnits>
+        <CreditCardAuthorization>Agree</CreditCardAuthorization>
+        <Refferal>Website</Refferal>
+        <CoBorrowerSSN>NULL</CoBorrowerSSN>
+        <LoanDate>2026-05-07</LoanDate>
+      </Loan_detail>
+      <property_detail>
+        <SSN>789012345</SSN>
+        <propertyID>7</propertyID>
+        <PropertyUsage>Second Home</PropertyUsage>
+        <PropertyCity>Worcester</PropertyCity>
+        <PropertyState>MA</PropertyState>
+        <PropertyZip>01608</PropertyZip>
+        <RealEstateAgentName>Emily Agent</RealEstateAgentName>
+        <RealEstateAgentPhone>6175553007</RealEstateAgentPhone>
+        <RealEstateAgentEmail>emily.agent@email.com</RealEstateAgentEmail>
+      </property_detail>
+    </Application>
+
+  </Applications>
+</mortgage>
+				
+
+

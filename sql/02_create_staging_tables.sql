@@ -14,73 +14,99 @@ CREATE SCHEMA dw;
 GO
 
 
-CREATE TABLE staging.Borrower_Source
-(
-    SSN BIGINT,
-    BorrowerFirstName VARCHAR(50),
-    BorrowerLastName VARCHAR(50),
-    BorrowerEmail VARCHAR(100),
-    HomePhone VARCHAR(20),
-    CellPhone VARCHAR(20),
-    MaritalStatus VARCHAR(30),
-    DateOfBirth DATE,
-    CurrentStreetAddress VARCHAR(100),
-    City VARCHAR(50),
-    StateCode VARCHAR(10),
-    ZipCode VARCHAR(10),
-    YearsAtThisAddress INT,
-    Sex VARCHAR(20),
-    Ethnicity VARCHAR(50),
-    Race VARCHAR(50),
-    LoadDate DATETIME DEFAULT GETDATE()
-);
 
+CREATE TABLE [staging].[Borrower_Stag](
+	[SSN] [bigint] NULL,
+	[BorrowerFirstName] [varchar](50) NULL,
+	[BorrowerLastName] [varchar](50) NULL,
+	[BorrowerEmail] [varchar](100) NULL,
+	[HomePhone] [varchar](20) NULL,
+	[CellPhone] [varchar](20) NULL,
+	[MaritalStatus] [varchar](30) NULL,
+	[DateOfBirth] [date] NULL,
+	[CurrentStreetAddress] [varchar](100) NULL,
+	[City] [varchar](50) NULL,
+	[StateCode] [varchar](10) NULL,
+	[ZipCode] [varchar](10) NULL,
+	[YearsAtThisAddress] [int] NULL,
+	[Sex] [varchar](20) NULL,
+	[Ethnicity] [varchar](50) NULL,
+	[Race] [varchar](50) NULL,
+	[LoadDate] [datetime] NULL,
+	[Co_Borrower_FirstName] [varchar](50) NULL,
+	[Co_Borrower_LastName] [varchar](50) NULL,
+	[Co_Borrower_Email] [varchar](100) NULL,
+	[Co_Borrower_SSN] [bigint] NULL,
+	[Co_Borrower_Address] [varchar](100) NULL,
+	[Co_Borrower_City] [varchar](50) NULL,
+	[Co_Borrower_State] [varchar](10) NULL,
+	[Co_Borrower_Zip] [varchar](20) NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [staging].[Borrower_Stag] ADD  DEFAULT (getdate()) FOR [LoadDate]
 GO
 
 USE MortgageBI_ETL;
 GO
 
-CREATE TABLE staging.Loan_Source (
-    Loan_ID INT,
-    SSN BIGINT,
-    Property_ID INT,
-    PurposeOfLoan VARCHAR(50),
-    LoanAmount DECIMAL(18,2),
-    PurchasePrice DECIMAL(18,2),
-    CreditCardAuthorization VARCHAR(50),
-    NumberOfUnits INT,
-    Referral VARCHAR(50),
-    CoBorrowerSSN BIGINT,
-    LoadDate DATETIME DEFAULT GETDATE()
-);
+CREATE TABLE [staging].[Loan_Stag](
+	[Loan_ID] [int] NULL,
+	[SSN] [bigint] NULL,
+	[Property_ID] [int] NULL,
+	[PurposeOfLoan] [varchar](50) NULL,
+	[LoanAmount] [decimal](18, 2) NULL,
+	[PurchasePrice] [decimal](18, 2) NULL,
+	[CreditCardAuthorization] [varchar](50) NULL,
+	[NumberOfUnits] [int] NULL,
+	[Referral] [varchar](50) NULL,
+	[CoBorrowerSSN] [bigint] NULL,
+	[LoadDate] [datetime] NULL
+) ON [PRIMARY]
 GO
 
-CREATE TABLE staging.Property_Source (
-    Property_ID INT,
-    SSN BIGINT,
-    PropertyUsage VARCHAR(50),
-    PropertyCity VARCHAR(50),
-    PropertyState VARCHAR(50),
-    PropertyZip VARCHAR(10),
-    RealEstateAgentName VARCHAR(50),
-    RealEstateAgentPhone VARCHAR(50),
-    RealEstateAgentEmail VARCHAR(100),
-    LoadDate DATETIME DEFAULT GETDATE()
-);
+ALTER TABLE [staging].[Loan_Stag] ADD  DEFAULT (getdate()) FOR [LoadDate]
+GO
+
+CREATE TABLE [staging].[Property_Stag](
+	[Property_ID] [int] NULL,
+	[SSN] [bigint] NULL,
+	[PropertyUsage] [varchar](50) NULL,
+	[PropertyCity] [varchar](50) NULL,
+	[PropertyState] [varchar](50) NULL,
+	[PropertyZip] [varchar](10) NULL,
+	[RealEstateAgentName] [varchar](50) NULL,
+	[RealEstateAgentPhone] [varchar](50) NULL,
+	[RealEstateAgentEmail] [varchar](100) NULL,
+	[LoadDate] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [staging].[Property_Stag] ADD  DEFAULT (getdate()) FOR [LoadDate]
 GO
 
 
-CREATE TABLE staging.Financial_Source (
-    SSN BIGINT,
-    MonthlyIncome DECIMAL(18,2),
-    Bonuses DECIMAL(18,2),
-    Commission DECIMAL(18,2),
-    OtherIncome DECIMAL(18,2),
-    RentOrOwn VARCHAR(50),
-    Checking DECIMAL(18,2),
-    Savings DECIMAL(18,2),
-    RetirementFund DECIMAL(18,2),
-    MutualFund DECIMAL(18,2),
-    LoadDate DATETIME DEFAULT GETDATE()
-);
+
+CREATE TABLE [staging].[Financial_Stag](
+	[SSN] [bigint] NULL,
+	[MonthlyIncome] [decimal](18, 2) NULL,
+	[Bonuses] [decimal](18, 2) NULL,
+	[Commission] [decimal](18, 2) NULL,
+	[OtherIncome] [decimal](18, 2) NULL,
+	[RentOrOwn] [varchar](50) NULL,
+	[Checking] [decimal](18, 2) NULL,
+	[Savings] [decimal](18, 2) NULL,
+	[RetirementFund] [decimal](18, 2) NULL,
+	[MutualFund] [decimal](18, 2) NULL,
+	[LoadDate] [datetime] NULL
+) ON [PRIMARY]
 GO
+
+ALTER TABLE [staging].[Financial_Stag] ADD  DEFAULT (getdate()) FOR [LoadDate]
+GO
+
+
+SELECT * FROM [staging].[Borrower_Stag]
+SELECT * FROM [staging].[Financial_Stag]
+SELECT * FROM [staging].[Loan_Stag]
+SELECT * FROM [staging].[Property_Stag]
